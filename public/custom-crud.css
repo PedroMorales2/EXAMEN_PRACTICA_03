@@ -1,0 +1,207 @@
+:root {
+    --dark-blue: #071D38;
+    --mid-blue: #123F75;
+    --soft-blue: #2E5E96;
+    --gray-light: #F5F7FA;
+    --gray-text: #64748b;
+}
+
+.font-weight-black { font-weight: 900 !important; }
+.bg-light-panel { background-color: #fafbfc !important; }
+.rounded-xl { border-radius: 10px !important; }
+.rounded-left-xl { border-top-left-radius: 10px !important; border-bottom-left-radius: 10px !important; }
+.rounded-right-xl { border-top-right-radius: 10px !important; border-bottom-right-radius: 10px !important; }
+.text-xs { font-size: 0.75rem !important; }
+.tracking-wider { letter-spacing: 0.06em !important; }
+
+.custom-crud-card {
+    border-radius: 16px !important;
+    overflow: hidden;
+    border: 1px solid rgba(7, 29, 56, 0.05) !important;
+    box-shadow: 0 10px 30px rgba(7, 29, 56, 0.04) !important;
+    background-color: #ffffff;
+}
+.custom-crud-header {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--mid-blue) 100%) !important;
+    border-bottom: none !important;
+}
+
+.btn-action-add {
+    background: #ffffff !important;
+    color: var(--dark-blue) !important;
+    border-radius: 10px !important;
+    border: none !important;
+    font-size: 0.88rem !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.btn-action-add:hover {
+    background-color: var(--gray-light) !important;
+    transform: translateY(-1.5px);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.25) !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 10px !important;
+    padding: 6px 12px !important;
+    background-color: #f8fafc !important;
+    color: #334155 !important;
+    transition: all 0.2s ease-in-out !important;
+}
+.dataTables_wrapper .dataTables_filter input:focus {
+    outline: none !important;
+    border-color: var(--soft-blue) !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 0 0 4px rgba(46, 94, 150, 0.1) !important;
+}
+
+.table-custom {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+}
+.table-custom thead th {
+    background-color: var(--dark-blue) !important;
+    color: #ffffff !important;
+    font-size: 0.85rem !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.06em !important;
+    border: none !important;
+    padding: 14px 12px !important;
+}
+.table-custom tbody td {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #edf2f7 !important;
+    padding: 14px 12px !important;
+    color: #334155 !important;
+    font-size: 0.92rem !important;
+    vertical-align: middle !important;
+}
+.table-custom tbody tr {
+    transition: all 0.2s ease !important;
+}
+.table-custom tbody tr:hover td {
+    background-color: rgba(18, 63, 117, 0.02) !important;
+}
+
+.color-preview-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% !important;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.06), 0 3px 8px rgba(7, 29, 56, 0.15) !important;
+    border: 2px solid #ffffff !important;
+    transition: transform 0.2s ease !important;
+}
+.color-preview-circle:hover {
+    transform: scale(1.2) !important;
+}
+
+.custom-hex-badge {
+    background-color: #f1f5f9 !important;
+    color: var(--mid-blue) !important;
+    font-family: monospace !important;
+    font-weight: 700 !important;
+    font-size: 0.85rem !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+}
+
+.custom-modal-content {
+    border-radius: 16px !important;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(7, 29, 56, 0.2) !important;
+}
+.custom-modal-header {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--mid-blue) 100%) !important;
+    border-bottom: none !important;
+}
+.custom-modal-content form input, 
+.custom-modal-content form textarea, 
+.custom-modal-content form select {
+    border-radius: 10px !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 10px 14px !important;
+    background-color: #f8fafc !important;
+    transition: all 0.2s ease !important;
+}
+.custom-modal-content form input:focus, 
+.custom-modal-content form textarea:focus,
+.custom-modal-content form select:focus {
+    border-color: var(--soft-blue) !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 0 0 4px rgba(46, 94, 150, 0.1) !important;
+    outline: none !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+
+/*  MENU LATERAL  */
+
+.main-sidebar, 
+.main-sidebar .brand-link {
+    background-color: var(--dark-blue) !important; /* Usa el #071D38 */
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+
+.sidebar a, 
+.main-sidebar .brand-link, 
+.main-sidebar .brand-link .brand-image + span {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+
+.sidebar .nav-header {
+    color: rgba(255, 255, 255, 0.4) !important;
+    font-size: 0.75rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding-top: 15px !important;
+}
+
+.sidebar .nav-sidebar .nav-item > a:hover {
+    background-color: var(--mid-blue) !important; 
+    color: #ffffff !important;
+    border-radius: 8px;
+}
+
+.sidebar .nav-sidebar .nav-link.active {
+    background: linear-gradient(135deg, var(--mid-blue) 0%, var(--soft-blue) 100%) !important;
+    color: #ffffff !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(7, 29, 56, 0.3) !important;
+}
+
+/* Línea divisoria interna del menú */
+.sidebar .user-panel, .sidebar .brand-link {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.sidebar .nav-item .nav-treeview {
+    background-color: #143c70 !important; 
+    border-radius: 8px;
+}
+
+
+/* Centrar logo institucional */
+.brand-link {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0.8rem 0.5rem !important;
+}
+
+.brand-link .brand-image {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    float: none !important;
+}
